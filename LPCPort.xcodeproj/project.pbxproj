@@ -12,13 +12,21 @@
 		A88014E7166D7290008ABA41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88014E6166D7290008ABA41 /* CoreGraphics.framework */; };
 		A88014ED166D7290008ABA41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A88014EB166D7290008ABA41 /* InfoPlist.strings */; };
 		A88014EF166D7290008ABA41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A88014EE166D7290008ABA41 /* main.m */; };
-		A88014F3166D7290008ABA41 /* LPCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88014F2166D7290008ABA41 /* LPCAppDelegate.m */; };
+		A88014F3166D7290008ABA41 /* LPCAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A88014F2166D7290008ABA41 /* LPCAppDelegate.mm */; };
 		A88014F5166D7290008ABA41 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A88014F4166D7290008ABA41 /* Default.png */; };
 		A88014F7166D7290008ABA41 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A88014F6166D7290008ABA41 /* Default@2x.png */; };
 		A88014F9166D7290008ABA41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A88014F8166D7290008ABA41 /* Default-568h@2x.png */; };
 		A88014FC166D7290008ABA41 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88014FA166D7290008ABA41 /* MainStoryboard_iPhone.storyboard */; };
 		A88014FF166D7290008ABA41 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88014FD166D7290008ABA41 /* MainStoryboard_iPad.storyboard */; };
-		A8801502166D7290008ABA41 /* LPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8801501166D7290008ABA41 /* LPCViewController.m */; };
+		A8801502166D7290008ABA41 /* LPCViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A8801501166D7290008ABA41 /* LPCViewController.mm */; };
+		A8801509166D7318008ABA41 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8801508166D7318008ABA41 /* AudioToolbox.framework */; };
+		A880150C166D738F008ABA41 /* DefaultGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A880150B166D738F008ABA41 /* DefaultGLView.mm */; };
+		A880150F166D73D7008ABA41 /* WaveformView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A880150E166D73D7008ABA41 /* WaveformView.mm */; };
+		A8801511166D74B2008ABA41 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8801510166D74B2008ABA41 /* OpenGLES.framework */; };
+		A8801513166D74D1008ABA41 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8801512166D74D1008ABA41 /* QuartzCore.framework */; };
+		A8801517166D74FA008ABA41 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A8801515166D74FA008ABA41 /* SimpleVertex.glsl */; };
+		A8801518166D74FA008ABA41 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A8801516166D74FA008ABA41 /* SimpleFragment.glsl */; };
+		A880151B166D82CE008ABA41 /* lpc.mm in Sources */ = {isa = PBXBuildFile; fileRef = A8801519166D82CE008ABA41 /* lpc.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,14 +39,25 @@
 		A88014EE166D7290008ABA41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A88014F0166D7290008ABA41 /* LPCPort-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LPCPort-Prefix.pch"; sourceTree = "<group>"; };
 		A88014F1166D7290008ABA41 /* LPCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCAppDelegate.h; sourceTree = "<group>"; };
-		A88014F2166D7290008ABA41 /* LPCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCAppDelegate.m; sourceTree = "<group>"; };
+		A88014F2166D7290008ABA41 /* LPCAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LPCAppDelegate.mm; sourceTree = "<group>"; };
 		A88014F4166D7290008ABA41 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A88014F6166D7290008ABA41 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A88014F8166D7290008ABA41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A88014FB166D7290008ABA41 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A88014FE166D7290008ABA41 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		A8801500166D7290008ABA41 /* LPCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCViewController.h; sourceTree = "<group>"; };
-		A8801501166D7290008ABA41 /* LPCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCViewController.m; sourceTree = "<group>"; };
+		A8801501166D7290008ABA41 /* LPCViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LPCViewController.mm; sourceTree = "<group>"; };
+		A8801508166D7318008ABA41 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A880150A166D738F008ABA41 /* DefaultGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultGLView.h; sourceTree = "<group>"; };
+		A880150B166D738F008ABA41 /* DefaultGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DefaultGLView.mm; sourceTree = "<group>"; };
+		A880150D166D73D7008ABA41 /* WaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveformView.h; sourceTree = "<group>"; };
+		A880150E166D73D7008ABA41 /* WaveformView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WaveformView.mm; sourceTree = "<group>"; };
+		A8801510166D74B2008ABA41 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A8801512166D74D1008ABA41 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A8801515166D74FA008ABA41 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		A8801516166D74FA008ABA41 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		A8801519166D82CE008ABA41 /* lpc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = lpc.mm; sourceTree = "<group>"; };
+		A880151A166D82CE008ABA41 /* lpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8801513166D74D1008ABA41 /* QuartzCore.framework in Frameworks */,
+				A8801511166D74B2008ABA41 /* OpenGLES.framework in Frameworks */,
+				A8801509166D7318008ABA41 /* AudioToolbox.framework in Frameworks */,
 				A88014E3166D7290008ABA41 /* UIKit.framework in Frameworks */,
 				A88014E5166D7290008ABA41 /* Foundation.framework in Frameworks */,
 				A88014E7166D7290008ABA41 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +80,14 @@
 		A88014D3166D7290008ABA41 = {
 			isa = PBXGroup;
 			children = (
+				A8801519166D82CE008ABA41 /* lpc.mm */,
+				A880151A166D82CE008ABA41 /* lpc.h */,
+				A8801515166D74FA008ABA41 /* SimpleVertex.glsl */,
+				A8801516166D74FA008ABA41 /* SimpleFragment.glsl */,
+				A880150A166D738F008ABA41 /* DefaultGLView.h */,
+				A880150B166D738F008ABA41 /* DefaultGLView.mm */,
+				A880150D166D73D7008ABA41 /* WaveformView.h */,
+				A880150E166D73D7008ABA41 /* WaveformView.mm */,
 				A88014E8166D7290008ABA41 /* LPCPort */,
 				A88014E1166D7290008ABA41 /* Frameworks */,
 				A88014DF166D7290008ABA41 /* Products */,
@@ -75,6 +105,9 @@
 		A88014E1166D7290008ABA41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8801512166D74D1008ABA41 /* QuartzCore.framework */,
+				A8801510166D74B2008ABA41 /* OpenGLES.framework */,
+				A8801508166D7318008ABA41 /* AudioToolbox.framework */,
 				A88014E2166D7290008ABA41 /* UIKit.framework */,
 				A88014E4166D7290008ABA41 /* Foundation.framework */,
 				A88014E6166D7290008ABA41 /* CoreGraphics.framework */,
@@ -86,11 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				A88014F1166D7290008ABA41 /* LPCAppDelegate.h */,
-				A88014F2166D7290008ABA41 /* LPCAppDelegate.m */,
+				A88014F2166D7290008ABA41 /* LPCAppDelegate.mm */,
 				A88014FA166D7290008ABA41 /* MainStoryboard_iPhone.storyboard */,
 				A88014FD166D7290008ABA41 /* MainStoryboard_iPad.storyboard */,
 				A8801500166D7290008ABA41 /* LPCViewController.h */,
-				A8801501166D7290008ABA41 /* LPCViewController.m */,
+				A8801501166D7290008ABA41 /* LPCViewController.mm */,
 				A88014E9166D7290008ABA41 /* Supporting Files */,
 			);
 			path = LPCPort;
@@ -168,6 +201,8 @@
 				A88014F9166D7290008ABA41 /* Default-568h@2x.png in Resources */,
 				A88014FC166D7290008ABA41 /* MainStoryboard_iPhone.storyboard in Resources */,
 				A88014FF166D7290008ABA41 /* MainStoryboard_iPad.storyboard in Resources */,
+				A8801517166D74FA008ABA41 /* SimpleVertex.glsl in Resources */,
+				A8801518166D74FA008ABA41 /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88014EF166D7290008ABA41 /* main.m in Sources */,
-				A88014F3166D7290008ABA41 /* LPCAppDelegate.m in Sources */,
-				A8801502166D7290008ABA41 /* LPCViewController.m in Sources */,
+				A88014F3166D7290008ABA41 /* LPCAppDelegate.mm in Sources */,
+				A8801502166D7290008ABA41 /* LPCViewController.mm in Sources */,
+				A880150C166D738F008ABA41 /* DefaultGLView.mm in Sources */,
+				A880150F166D73D7008ABA41 /* WaveformView.mm in Sources */,
+				A880151B166D82CE008ABA41 /* lpc.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +306,12 @@
 		A8801506166D7290008ABA41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mayank Sanganeria";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LPCPort/LPCPort-Prefix.pch";
 				INFOPLIST_FILE = "LPCPort/LPCPort-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7D578A25-B030-4BD0-8245-87F0D8B616BC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -279,10 +319,12 @@
 		A8801507166D7290008ABA41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mayank Sanganeria";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LPCPort/LPCPort-Prefix.pch";
 				INFOPLIST_FILE = "LPCPort/LPCPort-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7D578A25-B030-4BD0-8245-87F0D8B616BC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -306,6 +348,7 @@
 				A8801507166D7290008ABA41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
