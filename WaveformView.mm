@@ -12,7 +12,7 @@ void real_peel( float * coef, int order, float * radii )
 {
     int i,j;
     float rs, temp, tempcoeffs1[1024], tempcoeffs2[1024], reflections[1024];
-    
+        
     tempcoeffs1[0] = 1.0f;
     
     // initialize
